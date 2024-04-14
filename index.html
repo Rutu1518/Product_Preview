@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 31</title>
+    <style>
+        body{
+            background-image: linear-gradient(to top, #a6eaf3 0%, #fef9d7 100%);
+            min-height: 100vh;
+        }
+        .app-title{
+            text-align: center;
+            color: #560464;
+            font-weight: bolder;
+            font-style:oblique;
+        }
+        #mainProductImage{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px  #6b666b;
+            margin: 20px auto;
+            display: block;
+        }
+        .product-Images-Container{
+            display: flex;
+            justify-content: center;
+        }
+        .product-image{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 1px solid  #560464;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="app-title">Product Preview Design</h1>
+    <h2 class="app-title">Product Name - IPhone Pro Max</h2>
+    <img src="./img/img1.jpeg" id="mainProductImage"/>
+    <div class="product-Images-Container">
+        <img src="./img/img1.jpeg" class="product-image" onclick="changeImage('./img/img1.jpeg')"/>
+        <img src="./img/img2.jpeg" class="product-image" onclick="changeImage('./img/img2.jpeg')"/>
+        <img src="./img/img3.jpeg" class="product-image" onclick="changeImage('./img/img3.jpeg')"/>
+        <img src="./img/img4.png" class="product-image" onclick="changeImage('./img/img4.png')"/>
+        <img src="./img/img5.jpg" class="product-image" onclick="changeImage('./img/img5.jpg')"/>
+        <img src="./img/img6.jpg" class="product-image" onclick="changeImage('./img/img6.jpg')"/>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</htm
